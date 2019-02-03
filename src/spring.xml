@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="triangle" class="org.DrawingAppDemo.Triangle">
+	<!-- <constructor-arg type="int" value="21"></constructor-arg>
+		<constructor-arg value="20"></constructor-arg>
+		<property name="type" value="equilateral"></property> -->
+		<property name="pointA" ref="pointa" />
+		<property name="pointB" ref="pointb" />
+		<property name="pointC" ref="pointc" />
+	</bean>
+	<bean id="pointa" class="org.DrawingAppDemo.Point">
+		<property name="x" value="20" />
+		<property name="y" value="10" />
+	</bean>
+	<bean id="pointb" class="org.DrawingAppDemo.Point">
+		<property name="x" value="005" />
+		<property name="y" value="101" />
+	</bean>
+	<bean id="pointc" class="org.DrawingAppDemo.Point">
+		<property name="x" value="201" />
+		<property name="y" value="103" />
+	</bean>
+</beans>
